@@ -1,0 +1,39 @@
+.fs-task {
+	display: flex;
+	width: 70%;
+	min-height: 1px;
+	background-color: #fff;
+	border: 0.1vw solid #000;
+	padding: 1.5%;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	z-index: 101;
+}
+
+.fs-task__form {
+	display: flex;
+	justify-content: center;
+	min-width: 40%;
+}
+
+.fs-task__form-wrapper {
+	margin-right: 4%;
+}
+
+.fs-task__input {
+	font-size: 1vw;
+	padding: 1%;
+}
+
+.fs-task__data {
+	margin: 0;
+	font-size: 1.2vw;
+	width: 30%;
+}
+
+.fs-task__counter {
+	font-style: normal;
+}
+
+.fs-task__autocomplete { margin-top: 4%; }
