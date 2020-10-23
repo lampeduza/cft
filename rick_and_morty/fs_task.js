@@ -17,7 +17,6 @@ var keyUp = function(e) {
           div.innerHTML += '<span onclick="' + click_func + '">' + links[index].textContent + '</span><br />';
         }
       }
-
       else {
         count = 0;
       }
