@@ -14,7 +14,7 @@ var keyUp = function(e) {
         if (elem.textContent.match(regex)) { // проверяет для каждого элемента, соответствует ли этот элемент введенному в поле поиска значению
           count++; // Увлечение счетчика на единицу
           var click_func = "choice_link('" + links[index].textContent + "')";
-          div.innerHTML += '<a onclick="' + click_func + '">' + links[index].textContent + '</a><br />';
+          div.innerHTML += '<a onclick="' + click_func + '"' + 'href="' + links[index].getAttribute("href") + '"' + '>' + links[index].textContent + '</a><br />';
         }
       }
       else {
