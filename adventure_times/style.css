@@ -33,9 +33,11 @@
   /* Сюда дописать параметр  */
   clear: both;
 }
+
 /* ----------------------     Задание 3     ----------------------------------*/
 .item__container {
   display: flex;
+  flex-wrap: wrap;
 
 }
 
@@ -97,6 +99,36 @@
   }
 
   .item:nth-last-child(5) {
+    display: none;
+  }
+}
+
+@media (max-width: 387px) {
+  .item {
+    width: 33.33%;
+  }
+
+  .item:nth-last-child(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 306px) {
+  .item {
+    width: 50%;
+  }
+
+  .item:nth-last-child(7) {
+    display: none;
+  }
+}
+
+@media (max-width: 225px) {
+  .item {
+    width: 100%;
+  }
+
+  .item:nth-child(2) {
     display: none;
   }
 }
