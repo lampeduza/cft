@@ -13,7 +13,6 @@
 
 .fs-task__form {
 	display: flex;
-	justify-content: center;
 	min-width: 40%;
 }
 
@@ -27,8 +26,7 @@
 }
 
 .fs-task__data {
-	margin: 0;
-	font-size: 1.2vw;
+	margin: 5px 0 0 0;
 	width: 30%;
 }
 
