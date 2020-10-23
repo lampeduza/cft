@@ -14,7 +14,7 @@ var keyUp = function(e) {
         if (elem.textContent.match(regex)) { // проверяет для каждого элемента, соответствует ли этот элемент введенному в поле поиска значению
           count++; // Увлечение счетчика на единицу
           var click_func = "choice_link('" + links[index].textContent + "')";
-          div.innerHTML += '<span onclick="' + click_func + '">' + links[index].textContent + '</span><br />';
+          div.innerHTML += '<a onclick="' + click_func + '">' + links[index].textContent + '</a><br />';
         }
       }
       else {
@@ -37,4 +37,3 @@ var choice_link = function(link_item) {
   document.querySelector('#searchInput').value = link_item; // по клику вписывает вариант в поле ввода из предложенных вариантов
   document.querySelector('#autocomplete').innerHTML = ''; // очистка области размещения ссылок, после нажатия на вариант
 };
-
