@@ -10,7 +10,7 @@ var keyUp = function(e) {
     var count = 0; // задаем счетчику значение по умолчанию 0, до цикла
     links.forEach(function(elem, index) {
       if (elem) {
-        var regex = new RegExp("^" + value, "i"); // регулярное выражение
+        var regex = new RegExp(value, "i"); // регулярное выражение
         if (elem.textContent.match(regex)) { // проверяет для каждого элемента, соответствует ли этот элемент введенному в поле поиска значению
           var click_func = "choice_link('" + links[index].textContent + "')";
           div.innerHTML += '<span onclick="' + click_func + '">' + links[index].textContent + '</span><br />';
