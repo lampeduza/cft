@@ -1,7 +1,7 @@
-var links = document.querySelectorAll('a'); // Поиск всех ссылок и распределение их в псевдомассиве
+var div = document.querySelector('#autocomplete'); // Поиск контейнера
 
 var keyUp = function(e) {
-  var div = document.querySelector('#autocomplete'); // Поиск контейнера
+  var links = document.querySelectorAll('a'); // Поиск всех ссылок и распределение их в псевдомассиве
   var value = document.querySelector('#searchInput').value; // Поиск значения в поле поиска
   var counter = document.querySelector('.fs-task__counter'); // Поиск счетчика на странице
   div.textContent = ''; // Записываем в контейнер пустое значение
@@ -25,6 +25,7 @@ var keyUp = function(e) {
       count = 0;
       counter.textContent = count; // Перезаписываем переменную счетчик на новое значение счетчика
     });
+    $('#autocomplete').mark(value);
     counter.textContent = count; // Перезаписываем переменную счетчик на новое значение счетчика
   }
   else {
